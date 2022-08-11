@@ -17,6 +17,16 @@
         {
             "Effect": "Allow",
             "Action": [
+                "ssm:GetParameterHistory",
+                "ssm:GetParametersByPath",
+                "ssm:GetParameters",
+                "ssm:GetParameter"
+            ],
+            "Resource": "arn:aws:ssm:<region>:<account-id>:parameter/ifood-card"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
                 "ssm:DescribeParameters",
                 "ssm:ListTagsForResource"
             ],

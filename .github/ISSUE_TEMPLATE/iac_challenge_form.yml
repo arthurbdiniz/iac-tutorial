@@ -8,11 +8,11 @@ body:
       value: |
         #### Context
 
-        Inside the SSM parameter store there is a parameter called `unb-ifood-card`. This parameter is `base64` encoded with a message inside.
+        Inside the SSM parameter store there is a parameter called `ifood-card`. This parameter is `base64` encoded with a message inside.
 
         The first person to create a terraform code using native terraform components [data](https://www.terraform.io/language/data-sources) and [output](https://www.terraform.io/language/values/outputs) to get the value, do a base64 decode, and fill this issue will get the award.
 
-        You should work writing the terraform block inside this repo is the [ssm](https://github.com/arthurbdiniz/iac-tutorial/tree/main/ssm) folder.
+        You should work writing the terraform block inside this repo is the [challenge](https://github.com/arthurbdiniz/iac-tutorial/tree/main/challenge) folder. Make sure to edit only the file `card.tf`.
 
         I will provide AWS credentials during the class for you to be able to connect to the cloud provider.
 

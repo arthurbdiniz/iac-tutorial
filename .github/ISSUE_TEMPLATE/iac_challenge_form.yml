@@ -1,0 +1,55 @@
+name: IaC Challenge
+title: "[IaC Challenge]: <Your Name> "
+description: This is the place where you should add your solution for the IaC challenge.
+labels: ["challenge"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        #### Context
+
+        Inside the SSM parameter store there is a parameter called `unb-ifood-card`. This parameter is `base64` encoded with a message inside.
+
+        The first person to create a terraform code using native terraform components [data](https://www.terraform.io/language/data-sources) and [output](https://www.terraform.io/language/values/outputs) to get the value, do a base64 decode, and fill this issue will get the award.
+
+        You should work writing the terraform block inside this repo is the [ssm](https://github.com/arthurbdiniz/iac-tutorial/tree/main/ssm) folder.
+
+        I will provide AWS credentials during the class for you to be able to connect to the cloud provider.
+
+        Good luck and thanks for take your time participating on this challenge!! 🚀
+
+        ### Tip
+
+        - There is a helper inside `Makefile` called `sensitive`, you can use it by typing: `make sensitive`
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details (optional)
+      description: How can I get in touch?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: solution
+    attributes:
+      label: Terraform block
+      description: Add here the terraform block that solve the challenge.
+      placeholder: |
+        ...
+        output "card" {
+          ...
+        }
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Flag you found
+      description: Add here first the `base64` flag you found when you ran terraform and the message decoded right below.
+      placeholder: |
+        <base64 encoded message>
+
+        <decoded flag>
+    validations:
+      required: true

@@ -3,28 +3,35 @@
 This chart is responsible to deploy S3 buckets in AWS cloud.
 
 #### Dependencies
+
 - AWS CLI
 - Terraform
+- [asdf](https://asdf-vm.com/) (optional)
 
 #### Region
+
 - sa-east-1
 
 #### Init
+
 ```bash
-$ terraform init
+terraform init
 ```
 
-#### Check Chart
+#### Plan
+
 ```bash
-$ terraform plan
+terraform plan
 ```
 
-#### Deploy
+#### Apply
+
 ```bash
-$ terraform apply
+terraform apply
 ```
 
 #### Destroy
+
 ```bash
-$ terraform destroy
+terraform destroy
 ```

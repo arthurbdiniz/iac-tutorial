@@ -1,9 +1,10 @@
-provider "aws" {
-  region  = "sa-east-1"
-}
-
 resource "aws_ssm_parameter" "foo" {
-  name  = "unb-arthur"
+  name  = "unb-${var.name}"
   type  = "String"
   value = "bar"
+}
+
+variable "name" {
+  default = "" # Add here your name
+  type = string
 }

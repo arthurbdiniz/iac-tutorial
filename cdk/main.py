@@ -9,8 +9,12 @@ class MyStack(core.Stack):
         super().__init__(app, id)
 
         bucket = s3.Bucket(
-            self, "test-unb-bucket",
-            versioned=True
+            self,
+            id="test-unb-bucket",
+            bucket_name="test-unb-bucket",
+            versioned=True,
+            removal_policy=core.RemovalPolicy.DESTROY,
+            auto_delete_objects=True,
         )
 
 app = core.App()

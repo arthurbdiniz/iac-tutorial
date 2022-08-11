@@ -1,6 +1,8 @@
 .terraform
+.terraform.lock.hcl
 venv
 cdk.out
 
 terraform.tfstate
 terraform.tfstate.backup
+secrets.tfvars

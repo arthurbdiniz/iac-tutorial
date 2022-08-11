@@ -11,11 +11,13 @@ This chart is responsible to deploy a S3 bucket using AWS CDK.
 - sa-east-1
 
 #### Install AWS CDK
+
 ```bash
 npm install -g aws-cdk
 ```
 
 #### Python Virtual Environment
+
 ```bash
 # Create environment
 python3 -m venv venv
@@ -28,21 +30,39 @@ deactivate
 ```
 
 #### Install requirements
+
 ```bash
 pip install -r requirements.txt
 ```
 
-#### Check Chart
+#### Environment Variables
+
 ```bash
-$ cdk synthesize
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+export AWS_DEFAULT_REGION=""
 ```
 
-#### Deploy
+#### Bootstrap
+
 ```bash
-$ cdk deploy
+cdk bootstrap aws://<account-id>/<region>
+```
+
+#### Plan
+
+```bash
+cdk synthesize
+```
+
+#### Apply
+
+```bash
+cdk deploy
 ```
 
 #### Destroy
+
 ```bash
-$ cdk destroy
+cdk destroy
 ```

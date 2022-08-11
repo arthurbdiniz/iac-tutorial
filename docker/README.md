@@ -3,24 +3,30 @@
 This chart is responsible to deploy docker containers in your local environment.
 
 #### Dependencies
+
 - Terraform
+- [asdf](https://asdf-vm.com/) (optional)
 
 #### Init
+
 ```bash
-$ terraform init
+terraform init
 ```
 
-#### Check Chart
+#### Plan
+
 ```bash
-$ terraform plan
+terraform plan
 ```
 
-#### Deploy
+#### Apply
+
 ```bash
-$ terraform apply
+terraform apply
 ```
 
 #### Destroy
+
 ```bash
-$ terraform destroy
+terraform destroy
 ```

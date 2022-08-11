@@ -1,7 +1,3 @@
-provider "aws" {
-  region  = "sa-east-1"
-}
-
 variable "bucket_names" {
   description = "Bucket names"
   type        = list(string)

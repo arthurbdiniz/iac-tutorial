@@ -5,28 +5,33 @@ This chart is responsible to deploy apache web services in AWS cloud. The **Linu
 The shell script to configure the VM: `apache.sh`.
 
 #### Dependencies
+
 - AWS CLI
 - Terraform
+- [asdf](https://asdf-vm.com/) (optional)
 
 #### Region
+
 - sa-east-1
 
 #### Init
+
 ```bash
-$ terraform init
+terraform init
 ```
 
-#### Check Chart
+#### Plan
+
 ```bash
-$ terraform plan
+terraform plan
 ```
 
-#### Deploy
+#### Apply
 ```bash
-$ terraform apply
+terraform apply
 ```
 
 #### Destroy
 ```bash
-$ terraform destroy
+terraform destroy
 ```

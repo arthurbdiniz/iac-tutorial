@@ -3,28 +3,35 @@
 This chart is responsible to deploy SSM parameters in AWS cloud.
 
 #### Dependencies
+
 - AWS CLI
 - Terraform
+- [asdf](https://asdf-vm.com/) (optional)
 
 #### Region
+
 - sa-east-1
 
 #### Init
+
 ```bash
-$ terraform init
+make init
 ```
 
-#### Check Chart
+#### Plan
+
 ```bash
-$ terraform plan
+make plan
 ```
 
-#### Deploy
+#### Apply
+
 ```bash
-$ terraform apply
+make apply
 ```
 
 #### Destroy
+
 ```bash
-$ terraform destroy
+make destroy
 ```

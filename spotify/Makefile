@@ -9,4 +9,4 @@ plan:
 	terraform plan -var-file secrets.tfvars
 
 apply:
-	terraform apply -var-file secrets.tfvars
+	terraform apply -var-file secrets.tfvars -auto-approve
